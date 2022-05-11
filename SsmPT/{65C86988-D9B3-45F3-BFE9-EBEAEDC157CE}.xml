@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration date="2022/05/09" author="e.World Technology Ltd.">
+  <project id="{65C86988-D9B3-45F3-BFE9-EBEAEDC157CE}" file="E:\xampp\htdocs\ssmpt\SsmPT\SsmPT.pmp" name="SsmPT" product="PHPMaker" version="15.0" datetime="2022/05/09 13:24:36" languagefolder="phplang" userlevel="-2,&quot;Anonymous&quot;,0;">
+    <table id="tentang" name="tentang" caption="ABOUT US" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="layanan" name="layanan" caption="CERTIFICATE" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="portofolio" name="portofolio" caption="PRODUCT" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="kontak" name="kontak" caption="CONTACT" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="footerkiri" name="footerkiri" caption="FOOTER LEFT" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+  </project>
+</configuration>

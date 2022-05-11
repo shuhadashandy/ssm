@@ -3,15 +3,15 @@
 
  Source Server         : localhost
  Source Server Type    : MySQL
- Source Server Version : 50621
+ Source Server Version : 100422
  Source Host           : localhost:3306
  Source Schema         : ssm
 
  Target Server Type    : MySQL
- Target Server Version : 50621
+ Target Server Version : 100422
  File Encoding         : 65001
 
- Date: 10/05/2022 13:07:03
+ Date: 27/04/2022 12:22:41
 */
 
 SET NAMES utf8mb4;
@@ -22,7 +22,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `footerkanan`;
 CREATE TABLE `footerkanan`  (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ID` int NOT NULL AUTO_INCREMENT,
   `Judul` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Isi` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
@@ -38,7 +38,7 @@ INSERT INTO `footerkanan` VALUES (1, 'Our Newsletter', 'However, none of the thi
 -- ----------------------------
 DROP TABLE IF EXISTS `footerkiri`;
 CREATE TABLE `footerkiri`  (
-  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `Id` int NOT NULL AUTO_INCREMENT,
   `Judul` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Isi` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Isi2` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
@@ -61,14 +61,14 @@ INSERT INTO `footerkiri` VALUES (1, 'PT. SYAM SURYA MANDIRI', 'Jl. Propinsi No. 
 -- ----------------------------
 DROP TABLE IF EXISTS `kontak`;
 CREATE TABLE `kontak`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `Nama` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `Email` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `Judul` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `Isi` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
   `Status` char(1) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 47 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 27 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of kontak
@@ -98,34 +98,14 @@ INSERT INTO `kontak` VALUES (22, 'sadfsadf', 'assadfasf', 'asdfdasfdas', 'sadfas
 INSERT INTO `kontak` VALUES (23, 'sadfsadf', 'assadfasf', 'asdfdasfdas', 'sadfasfdas', NULL);
 INSERT INTO `kontak` VALUES (24, 'sadfsadf', 'assadfasf', 'asdfdasfdas', 'sadfasfdas', NULL);
 INSERT INTO `kontak` VALUES (25, 'sadfsadf', 'assadfasf', 'asdfdasfdas', 'sadfasfdas', NULL);
-INSERT INTO `kontak` VALUES (26, 'guiutititu', 'tuiutyity', 'ytiutiyti', 'ytityiutyiu', NULL);
-INSERT INTO `kontak` VALUES (27, 'guiutititu', 'tuiutyity', 'ytiutiyti', 'ytityiutyiu', NULL);
-INSERT INTO `kontak` VALUES (28, 'gfjhhfjfg', 'gfjhgfjfg', 'fghjfgj', 'fhgjg', NULL);
-INSERT INTO `kontak` VALUES (29, 'gfjhhfjfg', 'gfjhgfjfg', 'fghjfgj', 'fhgjg', NULL);
-INSERT INTO `kontak` VALUES (30, 'gfjhhfjfg', 'gfjhgfjfg', 'fghjfgj', 'fhgjg', NULL);
-INSERT INTO `kontak` VALUES (31, 'bmnbmnvnmbvbnm', 'vbmnbvmvbm', 'vbmnvmbnm', 'vbnmvmvbmn', NULL);
-INSERT INTO `kontak` VALUES (32, 'bmnbmnvnmbvbnm', 'vbmnbvmvbm', 'vbmnvmbnm', 'vbnmvmvbmn', NULL);
-INSERT INTO `kontak` VALUES (33, 'xzvzxvvz', 'zxvccxvzxvzx', 'xzcvvzc', 'xzvcxvxvczv', NULL);
-INSERT INTO `kontak` VALUES (34, 'xzvzxvvz', 'zxvccxvzxvzx', 'xzcvvzc', 'xzvcxvxvczv', NULL);
-INSERT INTO `kontak` VALUES (35, 'cvbncvnbn', 'cnbcvncvn', 'cvbnvcncv', 'cbvnbcvncvn', NULL);
-INSERT INTO `kontak` VALUES (36, 'cvbncvnbn', 'cnbcvncvn', 'cvbnvcncv', 'cbvnbcvncvn', NULL);
-INSERT INTO `kontak` VALUES (37, 'cvbncvnbn', 'cnbcvncvn', 'cvbnvcncv', 'cbvnbcvncvn', NULL);
-INSERT INTO `kontak` VALUES (38, 'dfgdfhdf', 'fdhgfhdh', 'fdhgdhdh', 'dfhdfhgdh', NULL);
-INSERT INTO `kontak` VALUES (39, 'dfgdfhdf', 'fdhgfhdh', 'fdhgdhdh', 'dfhdfhgdh', NULL);
-INSERT INTO `kontak` VALUES (40, 'dfgdfhdf', 'fdhgfhdh', 'fdhgdhdh', 'dfhdfhgdh', NULL);
-INSERT INTO `kontak` VALUES (41, 'ytiuitiytiuytiuyt', 'ytuititityiut', 'tyiutiytiytuii', 'ytiuytituiyti', NULL);
-INSERT INTO `kontak` VALUES (42, 'ytiuitiytiuytiuyt', 'ytuititityiut', 'tyiutiytiytuii', 'ytiuytituiyti', NULL);
-INSERT INTO `kontak` VALUES (43, 'ghkhgkhk', 'ghkghkghjk', 'hgkjhgkjhg', 'hgkjghkjhgk', NULL);
-INSERT INTO `kontak` VALUES (44, 'ghkhgkhk', 'ghkghkghjk', 'hgkjhgkjhg', 'hgkjghkjhgk', NULL);
-INSERT INTO `kontak` VALUES (45, 'ghkhgkhk', 'ghkghkghjk', 'hgkjhgkjhg', 'hgkjghkjhgk', NULL);
-INSERT INTO `kontak` VALUES (46, 'ghkhgkhk', 'ghkghkghjk', 'hgkjhgkjhg', 'hgkjghkjhgk', NULL);
+INSERT INTO `kontak` VALUES (26, 'Shuhada', 'shuhada@gmail.com', 'Bertanya', 'Mohon maaf sebelum ijin bertanya Pak', NULL);
 
 -- ----------------------------
 -- Table structure for layanan
 -- ----------------------------
 DROP TABLE IF EXISTS `layanan`;
 CREATE TABLE `layanan`  (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ID` int NOT NULL AUTO_INCREMENT,
   `Judul` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Isi` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Gambar` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
@@ -147,43 +127,47 @@ INSERT INTO `layanan` VALUES (6, 'Ministry', 'Ministry', 'Web SSM4.jpg');
 -- ----------------------------
 DROP TABLE IF EXISTS `motivation`;
 CREATE TABLE `motivation`  (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ID` int NOT NULL AUTO_INCREMENT,
   `Judul` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Isi` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Gambar` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of motivation
 -- ----------------------------
+INSERT INTO `motivation` VALUES (1, 'Keep Spirit', 'Enthusiasm and keep trying is one of the keys to success that can be done anytime and anywhere, so keep the spirit up, Enthusiasm and keep trying is one of the keys to success that can be done anytime and anywhere, so keep the spirit up', 'Cooked003.jpg');
 
 -- ----------------------------
 -- Table structure for portofolio
 -- ----------------------------
 DROP TABLE IF EXISTS `portofolio`;
 CREATE TABLE `portofolio`  (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ID` int NOT NULL AUTO_INCREMENT,
   `Judul` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Isi` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Gambar` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Gambar2` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `Gambar3` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`ID`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of portofolio
 -- ----------------------------
 INSERT INTO `portofolio` VALUES (1, 'BT HO', 'BT HO', 'BT HO.jpg', NULL, NULL);
 INSERT INTO `portofolio` VALUES (2, 'BT HO', 'BT HO', 'IMG_4407(1).jpg', NULL, NULL);
+INSERT INTO `portofolio` VALUES (3, 'Black Pink Cooked', 'Black Pink Cooked', 'BlackPinkCooked001.jpg', NULL, NULL);
+INSERT INTO `portofolio` VALUES (4, 'Cooked', 'Cooked', 'Cooked005.jpg', NULL, NULL);
+INSERT INTO `portofolio` VALUES (5, 'Cooked Strong', 'Cooked Strong', 'Cooked006.jpg', NULL, NULL);
 
 -- ----------------------------
 -- Table structure for tentang
 -- ----------------------------
 DROP TABLE IF EXISTS `tentang`;
 CREATE TABLE `tentang`  (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ID` int NOT NULL AUTO_INCREMENT,
   `Judul` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Isi` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Gambar` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
@@ -194,14 +178,14 @@ CREATE TABLE `tentang`  (
 -- Records of tentang
 -- ----------------------------
 INSERT INTO `tentang` VALUES (1, 'Company Introduction', '<p style=\"text-align:justify;\">Please allow me as owner of PT. Syam Surya Mandiri to deliver our high appreciate and thank\'s for all support and assistance we had received.</p>\r\n\r\n<p style=\"text-align:justify;\">PT. Syam Surya Mandiri is one of frozen shrimp factory located in Anggana - Kutai Kartanegara - East Borneo, Indonesia Established on August 2 of 2002 as an outcome of family support and Anggana farmers effort.</p>\r\n\r\n<p style=\"text-align:justify;\">Our business base on traditional farming consist 99% processed in our factory. Hence to maintain good supply of raw material, we have integrated hatchery to provide good quality shrimp fry for our ponds.</p>\r\n\r\n<p style=\"text-align:justify;\"><u><strong>Our Perspective</strong></u></p>\r\n\r\n<p style=\"text-align:justify;\">Achieve fisheries community welfare and incomes, to attain advance and independent fisheries industry.</p>', 'BT-NOBASHI.jpg');
-INSERT INTO `tentang` VALUES (3, 'Our Principal Mission', '<p>Our principal mission is Prime Quality including :<br />\r\n1. Prime Product Quality.<br />\r\n2. Prime Satisfaction Services.<br />\r\n3. Prime Human Resource.<br />\r\n4. Prime Sustainable Environment.</p>\r\n\r\n<p>We are HACCP certified factory \"A\" grade qualification, BRC and EC number approved.</p>\r\n\r\n<p>We commit to food safety and quality, customer satisfaction an good ecology awareness.</p>\r\n\r\n<p>May god\'s mercy guidance are always us.</p>\r\n\r\n<p><strong><u>H. Mangkana</u></strong><br />\r\nPresident Director</p>', 'IMG_4407.jpg');
+INSERT INTO `tentang` VALUES (3, 'Our Principal Mission', '<p>Our principal mission is Prime Quality including :<br />\r\n1. Prime Product Quality.<br />\r\n2. Prime Satisfaction Services.<br />\r\n3. Prime Human Resource.<br />\r\n4. Prime Sustainable Environment.</p>\r\n\r\n<p>We are HACCP certified factory \"A\" grade qualification, BRC and EC number approved.</p>\r\n\r\n<p>We commit to food safety and quality, customer satisfaction an good ecology awareness.</p>\r\n\r\n<p>May god\'s mercy guidance are always us.</p>', 'IMG_4407.jpg');
 
 -- ----------------------------
 -- Table structure for tim
 -- ----------------------------
 DROP TABLE IF EXISTS `tim`;
 CREATE TABLE `tim`  (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ID` int NOT NULL AUTO_INCREMENT,
   `Judul` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Isi` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `Gambar` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Rtssm" value="name:ID;datatype:int,name:Judul;datatype:string,name:Isi;datatype:blob,name:Gambar;datatype:string" />
+	<infoitem key="UD_Rtentang1" value="name:ID;datatype:int,name:Judul;datatype:string,name:Isi;datatype:blob,name:Gambar;datatype:string" />
+	<infoitem key="UD_Rtssm1" value="name:ID;datatype:int,name:Judul;datatype:string,name:Isi;datatype:blob,name:Gambar;datatype:string" />
+	<infoitem key="UD_Rfkssm" value="name:Id;datatype:int,name:Judul;datatype:string,name:Isi;datatype:string,name:Isi2;datatype:string,name:Phone;datatype:string,name:Email;datatype:string,name:Twitter;datatype:string,name:Facebook;datatype:string,name:Instagram;datatype:string,name:LinkedIn;datatype:string" />
+	<infoitem key="UD_Rfkssm1" value="name:ID;datatype:int,name:Judul;datatype:string,name:Isi;datatype:blob" />
+	<infoitem key="UD_Rpssm" value="name:ID;datatype:int,name:Judul;datatype:string,name:Isi;datatype:blob,name:Gambar;datatype:string,name:Gambar2;datatype:string,name:Gambar3;datatype:string" />
+	<infoitem key="UD_Rsssm" value="name:ID;datatype:int,name:Judul;datatype:string,name:Isi;datatype:blob,name:Gambar;datatype:string" />
+	<infoitem key="UD_Rmssm" value="name:ID;datatype:int,name:Judul;datatype:string,name:Isi;datatype:blob,name:Gambar;datatype:string" />
+</info>
